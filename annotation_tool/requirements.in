@@ -1,0 +1,8 @@
+pandas
+streamlit>=1.14
+
+# Backend (postgres)
+sqlmodel
+sqlalchemy-utils
+psycopg2-binary
+wonderwords
