@@ -1,5 +1,5 @@
 pandas
-streamlit>=1.14
+streamlit>=1.14,!=1.15.0
 
 # Backend (postgres)
 sqlmodel
