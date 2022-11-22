@@ -26,7 +26,7 @@ def show():
     * 🥈 2nd place: £60
     * 🥉 First place: £40 
 
-    The competition opens on ??/??/2023 and ends on ??/??/2023 AOE.
+    The competition opens on 23/11/2022 and ends on 31/01/2023 AOE.
 
     #### How do I enter the competition?
     All users contributing to Song Describer while the competition is running will automatically be considered
@@ -48,7 +48,7 @@ def show():
     #### How do I claim my prize?
     If you're one of the top 3 ranked contributors on our leaderboard when the competition ends, you 
     can claim your prize by emailing your unique user ID to [i.manco@qmul.ac.uk](mailto:i.manco@qmul.ac.uk) 
-    by ??/??/2023. Please note, if you cannot provide your user ID, we will not be able to verify your
+    by 31/02/2023. Please note, if you cannot provide your user ID, we will not be able to verify your
     contributions and you won't be able to claim your prize.
 
     We will check that your contributions adhere to the annotation guidelines outlined on this platform
