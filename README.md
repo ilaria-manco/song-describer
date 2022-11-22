@@ -8,31 +8,16 @@ It was developed by a team of researchers from Queen Mary University of London a
 
 The online app can be found at [song-describer.streamlit.app](https://song-describer.streamlit.app/).
 
-[TODO]
-
 ## Overview
 The Song Describer annotation process is structured into three main stages: user onboarding, annotation, and evaluation. The tool also provides additional features such as a leaderboard to display the users' progress and the ability to identify returning users via a unique user ID.
-
-### User onboarding 
-### Annotation
-### Evaluation
-
-## Backend
-[TODO]
-
-## Demo
-[TODO]
 
 ## How to run locally
 Instructions on how to run the app locally can be found in the [annotation tool README](annotation_tool/README.md).
 
-[TODO]
-
-## How to contribute
-[TODO]
-
 ## Citation
+```
 [TODO]
+```
 
 ## License
-This software is licensed under the MIT License.
+This software is licensed under the [MIT License](LICENSE).
