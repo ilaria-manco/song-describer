@@ -16,7 +16,7 @@ Instructions on how to run the app locally can be found in the [annotation tool 
 
 ## Citation
 ```
-[TODO]
+ISMIR 2022 Late-Breaking Demo (Coming soon)
 ```
 
 ## License
