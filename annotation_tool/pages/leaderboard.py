@@ -24,7 +24,7 @@ def show():
     value is:
     * 🥇 1st place: £100
     * 🥈 2nd place: £60
-    * 🥉 First place: £40 
+    * 🥉 3rd place: £40 
 
     The competition opens on 23/11/2022 and ends on 31/01/2023 AOE.
 
