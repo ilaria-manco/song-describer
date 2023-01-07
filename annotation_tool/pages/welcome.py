@@ -41,6 +41,16 @@ def draw_main_page(callback):
 
     """
 
+    competition = """
+    ###### 🏆 Competition 🏆
+
+    Up until **31st January 2023**, if you contribute to Song Describer, you'll have a 
+    chance to win one of our prizes. As a way to say thank you for your time and effort, 
+    we are offering [Abbey Road Studios](https://shop.abbeyroad.com/) gift vouchers to 
+    the 3 participants with the highest overall score. More details on the Leaderboard page.
+
+    """
+
     informed_consent = """
     ___ 
     📋 This survey is part of a research project being undertaken by Universal Music Group 
@@ -64,6 +74,8 @@ def draw_main_page(callback):
     """
 
     st.write(intro)
+
+    st.info(competition)
 
     with st.expander("❓ FAQs"):
         st.write(FAQS_TEXT)
