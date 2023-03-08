@@ -9,13 +9,13 @@ from annotation_tool.backend.models import get_leaderboard_counts
 ANNOTATION_SCORE_FACTOR = 5
 EVALUATION_SCORE_FACTOR = 1
 
+competition_start_date = get_competition_date("competition_start_date") or date(2022, 11, 23)
+competition_end_date = get_competition_date("competition_end_date") or date(2023, 1, 31)
+prize_claim_date = competition_end_date + timedelta(weeks=4)
+
 
 def show():
     st.header("📊 Leaderboard")
-
-    competition_start_date = get_competition_date("competition_start_date") or date(2022, 11, 23)
-    competition_end_date = get_competition_date("competition_end_date") or date(2023, 1, 31)
-    prize_claim_date = competition_end_date + timedelta(weeks=4)
 
     st.dataframe(get_leaderboard_dataframe(), use_container_width=True)
 
@@ -67,7 +67,7 @@ def show():
 
 
 def get_leaderboard_dataframe():
-    data = get_leaderboard_counts()
+    data = get_leaderboard_counts(competition_start_date, competition_end_date)
     captions_written_column = "Annotations"
     captions_evaluated_column = "Evaluations"
     name_column = "Nickname"
