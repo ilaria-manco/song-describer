@@ -33,7 +33,7 @@ def show():
     * 🥈 2nd place: £60
     * 🥉 3rd place: £40 
 
-    The competition opens on {competition_start_date:%d/%m/%Y} and ends on {competition_end_date:%d/%m/%Y} AOE.
+    The competition opens on {competition_start_date:%d/%m/%Y} and ends on {competition_end_date:%d/%m/%Y} GMT.
 
     #### How do I enter the competition?
     All users contributing to Song Describer while the competition is running will automatically be considered

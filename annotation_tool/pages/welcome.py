@@ -9,7 +9,7 @@ from annotation_tool.pages.flow_control import (
     set_user_id,
     RETURNING_USER_KEY,
 )
-from annotation_tool.pages.leaderboard import get_leaderboard_dataframe
+from annotation_tool.pages.leaderboard import get_leaderboard_dataframe, competition_end_date
 
 INPUT_USER_ID_KEY = "input_user_id"
 
@@ -41,10 +41,10 @@ def draw_main_page(callback):
 
     """
 
-    competition = """
+    competition = f"""
     ###### 🏆 Competition 🏆
 
-    Up until **31st January 2023**, if you contribute to Song Describer, you'll have a 
+    Up until **{competition_end_date:%d %B %Y}**, if you contribute to Song Describer, you'll have a 
     chance to win one of our prizes. As a way to say thank you for your time and effort, 
     we are offering [Abbey Road Studios](https://shop.abbeyroad.com/) gift vouchers to 
     the 3 participants with the highest overall score. More details on the Leaderboard page.
