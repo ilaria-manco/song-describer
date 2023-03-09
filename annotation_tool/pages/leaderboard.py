@@ -25,8 +25,8 @@ def show():
     If you contribute to Song Describer, you'll also have a chance to win one of our prizes!
 
     As a way to say thank you for your time and effort, we will send you a music-related gift 
-    voucher of your choice if you are among the 3 users with the highest overall score during 
-    the competition period:
+    voucher of your choice (e.g. for music stores, streaming platforms, online music magazines, etc.) 
+    if you are among the 3 users with the highest overall score during the competition period:
 
     * 🥇 1st place: £50
     * 🥈 2nd place: £30
