@@ -24,14 +24,13 @@ def show():
 
     If you contribute to Song Describer, you'll also have a chance to win one of our prizes!
 
-    As a way to say thank you for your time and effort, we are offering gift vouchers
-    to the 3 users with the highest overall score.
+    As a way to say thank you for your time and effort, we will send you a music-related gift 
+    voucher of your choice if you are among the 3 users with the highest overall score during 
+    the competition period:
 
-    The vouchers can be spent on the [Abbey Road Studios](https://shop.abbeyroad.com/) online store and their
-    value is:
-    * 🥇 1st place: £100
-    * 🥈 2nd place: £60
-    * 🥉 3rd place: £40 
+    * 🥇 1st place: £50
+    * 🥈 2nd place: £30
+    * 🥉 3rd place: £10 
 
     The competition opens on {competition_start_date:%d/%m/%Y} and ends on {competition_end_date:%d/%m/%Y} GMT.
 

@@ -46,8 +46,8 @@ def draw_main_page(callback):
 
     Up until **{competition_end_date:%d %B %Y}**, if you contribute to Song Describer, you'll have a 
     chance to win one of our prizes. As a way to say thank you for your time and effort, 
-    we are offering [Abbey Road Studios](https://shop.abbeyroad.com/) gift vouchers to 
-    the 3 participants with the highest overall score. More details on the Leaderboard page.
+    we are offering music-related gift vouchers to the 3 participants with the highest overall score. 
+    More details on the Leaderboard page.
 
     """
 
