@@ -1,3 +1,6 @@
+import datetime
+from typing import Optional
+
 import streamlit as st
 
 
@@ -25,3 +28,11 @@ def _get_limit(key: str, default_limit):
         return music_config.get(key, default_limit)
     else:
         return default_limit
+
+
+def get_competition_date(key: str) -> Optional[datetime.date]:
+    if competition_config := st.secrets.get("competition"):
+        date_str = competition_config.get(key)
+        if date_str:
+            return datetime.datetime.strptime(date_str, "%Y/%m/%d")
+    return None
