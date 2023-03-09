@@ -1,5 +1,5 @@
 import logging
-from datetime import datetime
+from datetime import date, datetime
 from typing import Optional, List, Union, Tuple
 
 import streamlit as st
@@ -164,10 +164,13 @@ def get_user_annotation_count(user_id: str) -> int:
     return user.get_annotation_count()
 
 
-def get_leaderboard_counts():
+def get_leaderboard_counts(
+    start_date: Union[date, datetime, None] = datetime.min, end_date: Union[date, datetime, None] = datetime.max
+):
     annotation_counts = (
         select(Annotation.user_id, User.nickname, func.count(Annotation.id))
         .join(User)
+        .filter(Annotation.timestamp >= start_date, Annotation.timestamp <= end_date)
         .group_by(
             Annotation.user_id,
             User.nickname,
@@ -176,6 +179,7 @@ def get_leaderboard_counts():
     evaluation_counts = (
         select(Evaluation.user_id, User.nickname, func.count(Evaluation.id))
         .join(User)
+        .filter(Evaluation.timestamp >= start_date, Evaluation.timestamp <= end_date)
         .group_by(
             Evaluation.user_id,
             User.nickname,

@@ -1,10 +1,17 @@
+from datetime import date, timedelta
+
 import pandas as pd
 import streamlit as st
 
+from annotation_tool.backend.config import get_competition_date
 from annotation_tool.backend.models import get_leaderboard_counts
 
 ANNOTATION_SCORE_FACTOR = 5
 EVALUATION_SCORE_FACTOR = 1
+
+competition_start_date = get_competition_date("competition_start_date") or date(2022, 11, 23)
+competition_end_date = get_competition_date("competition_end_date") or date(2023, 1, 31)
+prize_claim_date = competition_end_date + timedelta(weeks=4)
 
 
 def show():
@@ -12,21 +19,20 @@ def show():
 
     st.dataframe(get_leaderboard_dataframe(), use_container_width=True)
 
-    prize_info = """
+    prize_info = f"""
     ### Competition 🏆
 
     If you contribute to Song Describer, you'll also have a chance to win one of our prizes!
 
-    As a way to say thank you for your time and effort, we are offering gift vouchers
-    to the 3 users with the highest overall score.
+    As a way to say thank you for your time and effort, we will send you a music-related gift 
+    voucher of your choice (e.g. for music stores, streaming platforms, online music magazines, etc.) 
+    if you are among the 3 users with the highest overall score during the competition period:
 
-    The vouchers can be spent on the [Abbey Road Studios](https://shop.abbeyroad.com/) online store and their
-    value is:
-    * 🥇 1st place: £100
-    * 🥈 2nd place: £60
-    * 🥉 3rd place: £40 
+    * 🥇 1st place: £50
+    * 🥈 2nd place: £30
+    * 🥉 3rd place: £10 
 
-    The competition opens on 23/11/2022 and ends on 31/01/2023 AOE.
+    The competition opens on {competition_start_date:%d/%m/%Y} and ends on {competition_end_date:%d/%m/%Y} GMT.
 
     #### How do I enter the competition?
     All users contributing to Song Describer while the competition is running will automatically be considered
@@ -48,7 +54,7 @@ def show():
     #### How do I claim my prize?
     If you're one of the top 3 ranked contributors on our leaderboard when the competition ends, you 
     can claim your prize by emailing your unique user ID to [i.manco@qmul.ac.uk](mailto:i.manco@qmul.ac.uk) 
-    by 31/02/2023. Please note, if you cannot provide your user ID, we will not be able to verify your
+    by {prize_claim_date:%d/%m/%Y}. Please note, if you cannot provide your user ID, we will not be able to verify your
     contributions and you won't be able to claim your prize.
 
     We will check that your contributions adhere to the annotation guidelines outlined on this platform
@@ -60,7 +66,7 @@ def show():
 
 
 def get_leaderboard_dataframe():
-    data = get_leaderboard_counts()
+    data = get_leaderboard_counts(competition_start_date, competition_end_date)
     captions_written_column = "Annotations"
     captions_evaluated_column = "Evaluations"
     name_column = "Nickname"
