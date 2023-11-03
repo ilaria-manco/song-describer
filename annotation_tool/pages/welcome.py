@@ -25,6 +25,15 @@ def draw_main_page(callback):
         """
     )
 
+    warning_text = """
+        Song Describer is currently hibernating (as of November 2023) :sleeping:.
+        We are not collecting any new data, but you can still browse the website.
+        
+        Check out the [the dataset page](https://zenodo.org/search?q=Song%20Describer%20Dataset) if you're interested in
+        the data we've collected so far.
+        """
+    st.warning(warning_text, icon="⚠️")
+
     intro = """
     ###
 
@@ -81,6 +90,8 @@ def draw_main_page(callback):
         st.write(FAQS_TEXT)
 
     st.write(informed_consent)
+
+    st.warning(warning_text, icon="⚠️")
 
     _, col3, _ = st.columns([2, 1, 2])
     col3.button(

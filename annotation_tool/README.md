@@ -25,3 +25,10 @@ Similar to pip, pip-tools must be installed in each of your project's virtual en
 Now, run pip-compile requirements.in
 
 ```$ pip-compile requirements.in```
+
+## Database
+
+The tool was developed for a PostgreSQL database.
+The database connection is configured in the streamlit secrets.toml file.
+
+For limited testing purposes, an SQLite database is also available. Not all features might work as expected.

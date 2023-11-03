@@ -37,8 +37,12 @@ def get_trimmed_audio_element(audio_url: str, max_duration: int = 120):
         }} catch (e) {{
           // console.error(e.message);
           const para = document.createElement('p');
-          para.textContent = 'Your browser is not supported!';
+          para.textContent = 'Cannot play audio. Your browser is not supported!';
+          const errmsg = document.createElement('p');
+          errmsg.textContent = e.message;
           document.body.appendChild(para);
+          document.body.appendChild(errmsg);
+          audio.remove();
         }}
       }}
 

@@ -24,6 +24,9 @@ def fetch_tables(data_models: list[Type[SQLModel]], out_base_path: Path):
         df.to_pickle(
             out_base_path / f"{data_model.__tablename__}.pickle",
         )
+        df.to_csv(
+            out_base_path / f"{data_model.__tablename__}.csv",
+        )
 
 
 if __name__ == "__main__":
