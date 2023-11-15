@@ -15,8 +15,16 @@ The Song Describer annotation process is structured into three main stages: user
 Instructions on how to run the app locally can be found in the [annotation tool README](annotation_tool/README.md).
 
 ## Citation
-```
-ISMIR 2022 Late-Breaking Demo (Coming soon)
+If you use this tool in your research, please cite the following [paper](https://archives.ismir.net/ismir2022/latebreaking/000044.pdf):
+
+```bibtex
+@inproceedings{manco2022song,
+  title={Song Describer: a Platform for Collecting Textual Descriptions of Music Recordings},
+  author={Manco, Ilaria and Weck, Benno and Tovstogan, Philip and Won, Minz and Bogdanov, Dmitry},
+  booktitle={Extended Abstracts for the Late-Breaking Demo Session of the 23rd Int. Society for Music Information Retrieval Conf},
+  year={2022},
+  address={Bengaluru, India}
+}
 ```
 
 ## License
