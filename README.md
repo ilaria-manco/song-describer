@@ -6,6 +6,8 @@ Song Describer is an open-source data annotation tool for collecting and evaluat
 
 It was developed by a team of researchers from Queen Mary University of London and Universitat Pompeu Fabra Barcelona with the aim of crowdsourcing the first public research dataset of music captions.
 
+The resulting dataset is available at [Zenodo](https://zenodo.org/doi/10.5281/zenodo.10072000).
+
 The online app can be found at [song-describer.streamlit.app](https://song-describer.streamlit.app/).
 
 ## Overview
