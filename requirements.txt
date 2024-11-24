@@ -110,7 +110,7 @@ toml==0.10.2
     # via streamlit
 toolz==0.12.0
     # via altair
-tornado==6.3.3
+tornado==6.4.2
     # via streamlit
 typing-extensions==4.4.0
     # via
@@ -124,6 +124,8 @@ tzlocal==4.2
 urllib3==1.26.12
     # via requests
 validators==0.20.0
+    # via streamlit
+watchdog==6.0.0
     # via streamlit
 wonderwords==2.2.0
     # via -r annotation_tool/requirements.in
