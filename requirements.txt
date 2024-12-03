@@ -56,7 +56,7 @@ pandas==1.5.1
     #   -r annotation_tool/requirements.in
     #   altair
     #   streamlit
-pillow==10.1.0
+pillow==10.3.0
     # via streamlit
 protobuf==3.20.3
     # via streamlit
